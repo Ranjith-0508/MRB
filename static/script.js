@@ -7,3 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
         bar.style.width = progress;
     });
 });
+document.querySelectorAll('.faq-item h3').forEach(item => {
+    item.addEventListener('click', () => {
+        item.parentElement.classList.toggle('active');
+    });
+});
+

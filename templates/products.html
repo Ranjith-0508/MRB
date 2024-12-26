@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="products">
+    <h2 class="section-title"><i class="fas fa-box"></i> Our Products</h2>
+
+    <!-- Product List -->
+    <div class="products-container">
+        <div class="product-box animated fadeInUp">
+            <img src="{{ url_for('static', filename='images/dalmia.jpg') }}" alt="Dalmia Cement" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> Dalmia Cement</h3>
+                <p>Dalmia Cement is known for its high-quality and durable construction materials. It ensures strong bonding for any construction project.</p>
+            </div>
+        </div>
+
+        <div class="product-box animated fadeInUp delay-1s">
+            <img src="{{ url_for('static', filename='images/chettinadu.jpg') }}" alt="Chettinadu Cement" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> Chettinadu Cement</h3>
+                <p>Chettinadu Cement offers superior quality and is ideal for projects requiring extra strength and durability.</p>
+            </div>
+        </div>
+
+        <!-- Repeat similar structure for other products -->
+        <!-- Example -->
+        <div class="product-box animated fadeInUp delay-2s">
+            <img src="{{ url_for('static', filename='images/kadapa.jpg') }}" alt="Cuddapah Stone" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-stone"></i> Cuddapah Stone</h3>
+                <p>Cuddapah stone is a versatile and durable building material, perfect for flooring, walls, and other construction needs.</p>
+            </div>
+        </div>
+        <div class="product-box animated fadeInUp delay-3s">
+            <img src="{{ url_for('static', filename='images/pipes.jpg') }}" alt="Cement Pipes" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> Cement Pipes</h3>
+                <p>Our cement pipes are made with premium quality materials, ideal for water supply and drainage systems.</p>
+            </div>
+        </div>
+
+        <!-- Playas -->
+        <div class="product-box animated fadeInUp delay-4s">
+            <img src="{{ url_for('static', filename='images/playas.jpg') }}" alt="Playas" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> Playas</h3>
+                <p>Playas are perfect for use in pavements and landscaping, providing both aesthetic and functional benefits.</p>
+            </div>
+        </div>
+
+        <!-- Cement Window / Jali -->
+        <div class="product-box animated fadeInUp delay-5s">
+            <img src="{{ url_for('static', filename='images/jali.jpg') }}" alt="Cement Window / Jali" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> Cement Window / Jali</h3>
+                <p>Our cement windows and jalis are designed for ventilation and light, offering both functionality and style for your buildings.</p>
+            </div>
+        </div>
+
+        <!-- Sengal -->
+        <div class="product-box animated fadeInUp delay-6s">
+            <img src="{{ url_for('static', filename='images/sengal.jpg') }}" alt="Sengal" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> Sengal</h3>
+                <p>Sengal products are known for their durability and strength, widely used in construction for structural integrity.</p>
+            </div>
+        </div>
+
+        <div class="product-box animated fadeInUp delay-1s">
+            <img src="{{ url_for('static', filename='images/msand.jpg') }}" alt="M-Sand" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> M-Sand</h3>
+                <p>M-Sand is manufactured sand that is a better alternative to river sand, providing a high-quality and eco-friendly option for construction.</p>
+            </div>
+        </div>
+
+        <!-- P-Sand -->
+        <div class="product-box animated fadeInUp delay-2s">
+            <img src="{{ url_for('static', filename='images/psand.jpg') }}" alt="P-Sand" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> P-Sand</h3>
+                <p>P-Sand, also known as plastering sand, is perfect for finishing and plastering in construction projects.</p>
+            </div>
+        </div>
+
+        <!-- Metals -->
+        <div class="product-box animated fadeInUp delay-3s">
+            <img src="{{ url_for('static', filename='images/metals.jpg') }}" alt="Metals" class="product-image">
+            <div class="product-content">
+                <h3><i class="fas fa-cogs"></i> Metals</h3>
+                <p>Our metals are high-quality and reliable for all your construction needs, whether it's for structural or decorative purposes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
